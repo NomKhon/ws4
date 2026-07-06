@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Character Count</title>
+    </head>
+    <body>
+        <h1>มหาวิทยาลัยราชภัฏนครปฐม</h1>
+        <img src="https://i.imgflip.com/5t0ghc.gif">
+        <textarea id="myTextarea"></textarea>
+        <p>Character count: <span id="count">0</span></p>
+        <button id="submitBtn">submit</button>
+
+        <script>
+            const textInput = document.querySelector("#myTextarea");
+            const countDisplay = document.querySelector("#count");
+
+            textInput.addEventListener("input", () => {
+                countDisplay.textContent = textInput.value.length;
+            });
+        </script> 
+    </body> 
+</html>

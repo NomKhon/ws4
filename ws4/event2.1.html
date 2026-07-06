@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <button id="btn1">Check</button>
+            <img src="https://i.imgflip.com/5t0ghc.gif">
+            <input type="text" id="uname" placeholder="กรุณาใส่ชื่อตรงนี้">
+            <input type="email" id="email" placeholder="ระบุEmailตรงนี้">
+            <input type="password" id="pwd" placeholder="รหัสผ่าน">
+
+
+            <p id="show"></p>
+            <script>
+                const unamInput=document.getElementById("uname");
+                const showMess=document.getElementById("show");
+                
+                unamInput.addEventListener("input",()=>{
+                    const showMess=document.getElementById("show");
+                    showMess.textContent="Welcome "+unamInput.value+" to NPRU";
+                });
+                const emailInput=document.getElementById("email");
+                emailInput.addEventListener("input",()=>{
+                    if(emailInput.Value.Includes("@")){
+                        showMess.textContent="Correct Emai";
+                    }else{
+                        showMess.textContent="Email ต้องมีเครื่องหมาย @";
+                    }
+                })
+                const pwdInput=document.getElementById("pwd");
+                pwdInput.addEventListener("input",()=>{
+                    if(pwdInput.value.length <8){
+                        showMess.textContent="รหัสผ่านต้อง 8 ตัวอักษรขึ้นไป";
+                    }else{
+                        showMess.textContent="รหัาผ่านเป็นไปตามเกณฑ์"
+                    }
+                })
+            </script>
+        </body>
+    </head>
+</html>

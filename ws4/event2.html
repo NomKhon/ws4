@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <img src="https://i.imgflip.com/5t0ghc.gif">
+            <input type="text" id="uname" placeholder="กรุณาใส่ตรงนี้">
+            <p id="show"></p>
+            <script>
+                const unamInput=document.getElementById("uname");
+                unamInput.addEventListener("input",()=>{
+                    const showMess=document.getElementById("show");
+                    showMess.textContent="Welcome "+unamInput.value+" to NPRU";
+                });
+            </script>
+        </body>
+    </head>
+</html>

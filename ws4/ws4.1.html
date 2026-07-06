@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+    </head>
+    <body>
+        <h1>มหาวิทยาลัยราชภัฏนครปฐม</h1>
+        <p class="welcome">ยินดีต้อนรับ</p>
+        <p id="message">สาขาวิทยาการคอมพิวเตอร์</p>
+        
+        <button>Red</button>
+        <button>Yellow</button>
+        <button>LightBlue</button>
+
+        <br><br>
+        <input type="text" id="uname" placeholder="กรุณาใส่ตรงนี้">
+        <p id="show"></p>
+
+        <script>
+            const btns = document.querySelectorAll("button");
+            
+            btns.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    document.body.style.backgroundColor = btn.textContent;
+                });
+            });
+        </script>
+    </body>
+</html>

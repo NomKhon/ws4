@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>หน้าเว็บของฉัน</title>
+    </head>
+    <body>
+        <h1>มหาวิทยาลัยราชภัฏนครปฐม</h1>
+        <img src="https://i.imgflip.com/5t0ghc.gif">
+        <button id="btnClick">เปลี่ยนข้อความ</button>
+
+        <script>
+            const btn = document.querySelector("button");
+            const heading = document.querySelector("h1");
+
+            btn.addEventListener("click", function() {
+                heading.textContent = "ยินดีต้อนรับสู่สาขาวิทยาการคอมพิวเตอร์❤️";
+            });
+        </script>
+    </body> 
+</html>
